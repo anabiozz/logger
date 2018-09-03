@@ -159,3 +159,9 @@ func Return(err error) error {
 func (err CustomError) Error() string {
 	return err.Message
 }
+
+// Example
+// if err := step(); err != nil {
+//   errx := errorx.New(http.StatusInternalServerError, "Operation failed")
+//   errx.Wrap(err)
+// }
